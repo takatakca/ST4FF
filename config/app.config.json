@@ -1,4 +1,5 @@
 {
+  "key": "st4ff",
   "name": "ST4FF by TAKATAK",
   "cloverAppId": "E0BGTY752BZYE",
   "developerId": "9KJ25ATT15TTW",
@@ -31,5 +32,7 @@
     "CLOVER_API_BASE",
     "APP_BASE_URL",
     "DATABASE_URL"
-  ]
+  ],
+  "summaryFr": "Horaires, pointeuse et coûts de main-d’œuvre, à partir des employés et des quarts Clover : le personnel au même endroit que les ventes.",
+  "summaryEn": "Schedules, time clock and labour cost from Clover employees and shifts: your team in the same place as your sales."
 }
