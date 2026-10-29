@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 // Premium: { employeeId, date, start "HH:MM", end "HH:MM" } → a planned shift (compared with Clover's real shifts).
 export async function POST(req: Request) {
-  const c = await requireMerchant(req, 'premium');
+  const c = await requireMerchant(req, 'premium', { action: 'staff.schedule' });
   if (!isCtx(c)) return c;
   const b = await readJson(req);
   if (!b) return fail('JSON body required');

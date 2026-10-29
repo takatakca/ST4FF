@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 // { employeeId, wageCents } — hourly wage kept in ST4FF (Clover has no wage field).
 export async function PUT(req: Request) {
-  const c = await requireMerchant(req);
+  const c = await requireMerchant(req, 'base', { action: 'staff.wages' });
   if (!isCtx(c)) return c;
   const b = await readJson(req);
   if (!b) return fail('JSON body required');
